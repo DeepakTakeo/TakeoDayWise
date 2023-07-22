@@ -8,7 +8,7 @@ public class CoffeeShopOrderUsingSwitch  {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to the Coffee Shop!");
-        System.out.println("Menu:");
+        System.out.println("Menu is as :");
         System.out.println("1. Espresso");
         System.out.println("2. Latte");
         System.out.println("3. Cappuccino");
