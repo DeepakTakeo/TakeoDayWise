@@ -10,7 +10,7 @@ public class ScannerIntro {
         Scanner scanner = new Scanner(System.in); // memory and cpu resources occupied.  reference  //outOfMemory
 
         // Step 2: Prompt the user to enter their name
-        System.out.print("Enter your name: ");
+        System.out.print("Enter your name in capital letters: ");
 
         // Step 3: Use the Scanner object to read the input (name) from the user
         String name = scanner.nextLine();

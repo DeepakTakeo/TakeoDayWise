@@ -9,7 +9,7 @@ public class ScannerNext {
         Scanner scanner = new Scanner(System.in);
 
         //next() can take input as 1 word only,if we press space then it will terminate program
-        System.out.print("Enter your first name: ");
+        System.out.print("Enter your first name in : ");
         String firstName = scanner.next();
 
         //nextLine() can take whole line as input ,if we press enter control will go to next line
