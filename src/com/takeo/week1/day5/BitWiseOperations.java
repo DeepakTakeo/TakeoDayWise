@@ -6,7 +6,7 @@ package com.takeo.week1.day5;
    or when optimizing performance-critical operations that can be efficiently handled at the bit level
  */
 
-public class BitwiseOperations {
+public class BitWiseOperations {
 
     public static void main(String[] args) {
 
