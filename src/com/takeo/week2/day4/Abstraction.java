@@ -1,19 +1,31 @@
 package com.takeo.week2.day4;
 
-abstract class Shape {
+/*
+In Java, abstract is a non-access modifier in java applicable for classes,
+and methods but not variables.
+ It is used to achieve abstraction which is one of the pillars of Object Oriented Programming(OOP).
+ Following are different contexts where abstract can be used in Java.
+*/
+ abstract class Shape {
     protected String color;
 
     public Shape(String color) {
         this.color = color;
     }
 
-    // Abstract method to calculate area (no implementation)
+    // Abstract method to calculate area (no implementation) //subclasser responsibility
+    //subclass must override them to provide a method definition
     public abstract double calculateArea();
 
     // Concrete method with implementation
     public void displayColor() {
         System.out.println("Color: " + color);
     }
+}
+
+abstract class Employee{
+
+    public abstract double getEmployeeSalary();
 }
 
 class Circle extends Shape {
@@ -24,11 +36,12 @@ class Circle extends Shape {
         this.radius = radius;
     }
 
-    @Override
+   @Override
     public double calculateArea() {
         return Math.PI * radius * radius;
     }
 }
+
 
 class Rectangle extends Shape {
     private double length;

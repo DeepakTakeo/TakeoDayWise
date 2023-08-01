@@ -1,9 +1,10 @@
-package com.takeo.week2.day4;
+package com.takeo.week3.day1;
 
 public class WrapperExample {
     public static void main(String[] args) {
         // Using wrapper classes to convert primitive data types to objects
         int intValue = 42;
+
         Integer integerObj = Integer.valueOf(intValue); // Boxing
 
         double doubleValue = 3.14;

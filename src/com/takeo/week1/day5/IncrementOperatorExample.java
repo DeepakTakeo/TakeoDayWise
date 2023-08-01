@@ -4,7 +4,7 @@ public class IncrementOperatorExample {
 
     public static void main(String[] args) {
         int count = 5;
-
+         // ++count  = 6
         // Using prefix increment (++count)
         int result1 = ++count; // Increment count first, then assign to result1
         System.out.println("Prefix Increment:");
@@ -15,7 +15,9 @@ public class IncrementOperatorExample {
         count = 5;
 
         // Using postfix increment (count++)
-        int result2 = count++; // Assign count to result2 first, then increment count
+
+        // count = 5 -> result2 -> count++ = 6
+        int result2 = count++; // Assign count to result2 first, then increment count i++
         System.out.println("\nPostfix Increment:");
         System.out.println("count: " + count); // Output: 6
         System.out.println("result2: " + result2); // Output: 5
