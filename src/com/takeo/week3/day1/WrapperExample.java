@@ -26,7 +26,7 @@ public class WrapperExample {
         boolean boolValueFromObj = boolObj.booleanValue(); // Unboxing
 
         // Autoboxing (Automatic conversion from primitive to wrapper class)
-        Integer autoBoxedInt = 100;
+        Integer autoBoxedInt = 100; // comipler will do boxing
 
         // Autounboxing (Automatic conversion from wrapper class to primitive)
         int autoUnboxedInt = autoBoxedInt;
