@@ -44,7 +44,7 @@ public class ListImp {
          }*/
 
         /*for(Integer element : intList){
-            System.out.println(element);
+            01 .out.println(element);
         }*/
 
         // java 8  ,Streams in Java 8/operations   - Group A prepare this topic
