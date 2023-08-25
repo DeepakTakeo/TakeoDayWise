@@ -30,7 +30,9 @@ public class ConnectionWithPostgres {
     }
 
     private static void createTable(Connection connection) throws SQLException {
-        String createTableSQL = "CREATE TABLE IF NOT EXISTS public.employees (" +
+
+        // queries in String format  --native
+        String createTableSQL = "CREATE TABLE IF NOT EXISTS public.student (" +
                 "id INT PRIMARY KEY," +
                 "first_name VARCHAR(255)," +
                 "last_name VARCHAR(255))";
@@ -42,7 +44,7 @@ public class ConnectionWithPostgres {
     }
 
     private static void insertData(Connection connection, int id, String firstName, String lastName) throws SQLException {
-        String insertSQL = "INSERT INTO employees (id, first_name, last_name) VALUES (?, ?, ?)";
+        String insertSQL = "INSERT INTO student (id, first_name, last_name) VALUES (?, ?, ?)";
 
         try (PreparedStatement statement = connection.prepareStatement(insertSQL)) {
             statement.setInt(1, id);
@@ -54,7 +56,7 @@ public class ConnectionWithPostgres {
     }
 
     private static void retrieveData(Connection connection) throws SQLException {
-        String selectSQL = "SELECT * FROM employees";
+        String selectSQL = "SELECT * FROM student";
 
         try (PreparedStatement statement = connection.prepareStatement(selectSQL)) {
             ResultSet resultSet = statement.executeQuery();
